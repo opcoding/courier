@@ -8,7 +8,7 @@
     use PHPCI\Model\Build;
     use PHPCI\Plugin;
 
-    class Builder // implements Plugin
+    class Courier implements Plugin
     {
 
         /**
