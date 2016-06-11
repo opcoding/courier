@@ -8,7 +8,7 @@
     use PHPCI\Model\Build;
     use PHPCI\Plugin;
 
-    class Courie // implements Plugin
+    class Builder // implements Plugin
     {
 
         /**
