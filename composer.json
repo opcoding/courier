@@ -1,0 +1,9 @@
+{
+    "name": "opcoding/courier",
+    "autoload": {
+	"psr-4": {
+	    "OpCoding\\Courier\\": "src/"
+	}
+    }
+
+}
