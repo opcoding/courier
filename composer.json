@@ -3,7 +3,9 @@
     "autoload": {
 	"psr-4": {
 	    "OpCoding\\Courier\\": "src/"
-	}
+	},
+      "classmap": [
+        "src/Courier.php"
+      ]
     }
-
 }
