@@ -81,6 +81,12 @@
                     $this->keyFile = $this->writeSshKey($this->build->getBuildPath());
 
                     $environment = isset($options['env']) ? $options['env'] : $this->guessEnv();
+                    
+                    if(is_false($environment)) {
+                        $this->phpci->log('No environment set or configured');
+                        return true;
+                    }
+                    
                     if (!empty($options['targets']))
                     {
 
@@ -234,7 +240,7 @@
                 }
 
                 // default
-                return 'development';
+                return false;
             }
 
             /**
